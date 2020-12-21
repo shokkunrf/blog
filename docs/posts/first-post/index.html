@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>First Post | The Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="ブログを始めてみた なんでブログを始めたの？ 一番の理由は、メモの管理に困ってたから。
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。
+なんで Hugo を選んだの？ Hugo を使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。
+他にもHugo のリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
+あとこの Qiita 記事につられて 30 分でできると思ったから。
+まぁ 2 つ目以降の理由なんてみんな後付けなんだけども。
+Hugo でブログを始める手順 技術ブログっぽいものも書いてみる。
+手順といってもHugo のクイックスタートに沿って進めるだけ。
+この記事では Hugo v0.79.1を使い、Debian 10 を前提とする。
+1. Hugo をインストールする   Hugo Releasesから OS にあったパッケージをダウンロードし、インストールする
+今回は hugo_0.79.1_Linux-64bit.deb をインストールする。
+  hugo がインストールされているか確認する
+hugo version   2. サイトを作成する   GitHub でリポジトリを作成する
+今回はblogというリポジトリを作った。
+  ローカルにリポジトリをクローンする
+git clone git@github.com:shokkunrf/blog.git cd blog   リポジトリ内にサイトを作成する
+fooは適当に付けた。好きな文字列で OK。">
+    <meta name="generator" content="Hugo 0.79.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/blog/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="First Post" />
+<meta property="og:description" content="ブログを始めてみた なんでブログを始めたの？ 一番の理由は、メモの管理に困ってたから。
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。
+なんで Hugo を選んだの？ Hugo を使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。
+他にもHugo のリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
+あとこの Qiita 記事につられて 30 分でできると思ったから。
+まぁ 2 つ目以降の理由なんてみんな後付けなんだけども。
+Hugo でブログを始める手順 技術ブログっぽいものも書いてみる。
+手順といってもHugo のクイックスタートに沿って進めるだけ。
+この記事では Hugo v0.79.1を使い、Debian 10 を前提とする。
+1. Hugo をインストールする   Hugo Releasesから OS にあったパッケージをダウンロードし、インストールする
+今回は hugo_0.79.1_Linux-64bit.deb をインストールする。
+  hugo がインストールされているか確認する
+hugo version   2. サイトを作成する   GitHub でリポジトリを作成する
+今回はblogというリポジトリを作った。
+  ローカルにリポジトリをクローンする
+git clone git@github.com:shokkunrf/blog.git cd blog   リポジトリ内にサイトを作成する
+fooは適当に付けた。好きな文字列で OK。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shokkunrf.github.io/blog/posts/first-post/" />
+<meta property="article:published_time" content="2020-12-21T21:53:52+09:00" />
+<meta property="article:modified_time" content="2020-12-21T21:53:52+09:00" />
+<meta itemprop="name" content="First Post">
+<meta itemprop="description" content="ブログを始めてみた なんでブログを始めたの？ 一番の理由は、メモの管理に困ってたから。
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。
+なんで Hugo を選んだの？ Hugo を使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。
+他にもHugo のリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
+あとこの Qiita 記事につられて 30 分でできると思ったから。
+まぁ 2 つ目以降の理由なんてみんな後付けなんだけども。
+Hugo でブログを始める手順 技術ブログっぽいものも書いてみる。
+手順といってもHugo のクイックスタートに沿って進めるだけ。
+この記事では Hugo v0.79.1を使い、Debian 10 を前提とする。
+1. Hugo をインストールする   Hugo Releasesから OS にあったパッケージをダウンロードし、インストールする
+今回は hugo_0.79.1_Linux-64bit.deb をインストールする。
+  hugo がインストールされているか確認する
+hugo version   2. サイトを作成する   GitHub でリポジトリを作成する
+今回はblogというリポジトリを作った。
+  ローカルにリポジトリをクローンする
+git clone git@github.com:shokkunrf/blog.git cd blog   リポジトリ内にサイトを作成する
+fooは適当に付けた。好きな文字列で OK。">
+<meta itemprop="datePublished" content="2020-12-21T21:53:52+09:00" />
+<meta itemprop="dateModified" content="2020-12-21T21:53:52+09:00" />
+<meta itemprop="wordCount" content="182">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="First Post"/>
+<meta name="twitter:description" content="ブログを始めてみた なんでブログを始めたの？ 一番の理由は、メモの管理に困ってたから。
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。
+なんで Hugo を選んだの？ Hugo を使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。
+他にもHugo のリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
+あとこの Qiita 記事につられて 30 分でできると思ったから。
+まぁ 2 つ目以降の理由なんてみんな後付けなんだけども。
+Hugo でブログを始める手順 技術ブログっぽいものも書いてみる。
+手順といってもHugo のクイックスタートに沿って進めるだけ。
+この記事では Hugo v0.79.1を使い、Debian 10 を前提とする。
+1. Hugo をインストールする   Hugo Releasesから OS にあったパッケージをダウンロードし、インストールする
+今回は hugo_0.79.1_Linux-64bit.deb をインストールする。
+  hugo がインストールされているか確認する
+hugo version   2. サイトを作成する   GitHub でリポジトリを作成する
+今回はblogというリポジトリを作った。
+  ローカルにリポジトリをクローンする
+git clone git@github.com:shokkunrf/blog.git cd blog   リポジトリ内にサイトを作成する
+fooは適当に付けた。好きな文字列で OK。"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/blog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        The Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://shokkunrf.github.io/blog/posts/first-post/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://shokkunrf.github.io/blog/posts/first-post/&amp;text=First%20Post" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://shokkunrf.github.io/blog/posts/first-post/&amp;title=First%20Post" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">First Post</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-12-21T21:53:52+09:00">December 21, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="ブログを始めてみた">ブログを始めてみた</h1>
+<h2 id="なんでブログを始めたの">なんでブログを始めたの？</h2>
+<p>一番の理由は、メモの管理に困ってたから。<br>
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。<br>
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。<br>
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。</p>
+<h2 id="なんで-hugo-を選んだの">なんで Hugo を選んだの？</h2>
+<p>Hugo を使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。<br>
+他にも<a href="https://github.com/gohugoio/hugo">Hugo のリポジトリ</a>の更新も続いてるみたいだし、<a href="https://jamstack.org/generators/">Jamstack</a>を見ても人気みたいだし。<br>
+あと<a href="https://qiita.com/yotsak/items/017734d5f873f4f194d4">この Qiita 記事</a>につられて 30 分でできると思ったから。<br>
+まぁ 2 つ目以降の理由なんてみんな後付けなんだけども。</p>
+<h2 id="hugo-でブログを始める手順">Hugo でブログを始める手順</h2>
+<p>技術ブログっぽいものも書いてみる。<br>
+手順といっても<a href="https://gohugo.io/getting-started/quick-start/">Hugo のクイックスタート</a>に沿って進めるだけ。<br>
+この記事では Hugo <a href="https://github.com/gohugoio/hugo/releases/tag/v0.79.1">v0.79.1</a>を使い、Debian 10 を前提とする。</p>
+<h3 id="1-hugo-をインストールする">1. Hugo をインストールする</h3>
+<ol>
+<li>
+<p><a href="https://github.com/gohugoio/hugo/releases">Hugo Releases</a>から OS にあったパッケージをダウンロードし、インストールする<br>
+今回は <code>hugo_0.79.1_Linux-64bit.deb</code> をインストールする。</p>
+</li>
+<li>
+<p>hugo がインストールされているか確認する</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo version
+</code></pre></div></li>
+</ol>
+<h3 id="2-サイトを作成する">2. サイトを作成する</h3>
+<ol>
+<li>
+<p>GitHub でリポジトリを作成する<br>
+今回は<code>blog</code>というリポジトリを作った。</p>
+</li>
+<li>
+<p>ローカルにリポジトリをクローンする</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@github.com:shokkunrf/blog.git
+cd blog
+</code></pre></div></li>
+<li>
+<p>リポジトリ内にサイトを作成する<br>
+<code>foo</code>は適当に付けた。好きな文字列で OK。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site foo
+mv ./foo/* ./
+rm -R ./foo
+</code></pre></div></li>
+</ol>
+<h3 id="3-テーマを追加する">3. テーマを追加する</h3>
+<ol>
+<li>
+<p><a href="https://themes.gohugo.io/">Hugo のスタイルテーマ</a>からテーマを選ぶ<br>
+クイックスタートにあった<a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke</a>を使ってみる。</p>
+</li>
+<li>
+<p>選んだテーマの GitHub リポジトリを<code>themes/</code>に追加する<br>
+<code>submodule</code>を使って追加することで元のテーマが更新されても簡単に適用できる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></div></li>
+<li>
+<p>設定を追加する<br>
+<a href="https://themes.gohugo.io/gohugo-theme-ananke/">Ananke の Getting Start</a>や<a href="https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/exampleSite/config.toml">config.toml のサンプル</a>を参考に<code>config.toml</code>を変更する。<br>
+とりあえず、以下さえあればローカルでの表示はできる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config.toml" data-lang="config.toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
+<span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+<span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;ananke&#34;</span>
+</code></pre></div></li>
+</ol>
+<h3 id="4-記事を追加する">4. 記事を追加する</h3>
+<ol>
+<li>
+<p>記事を生成する
+<code>content</code>以下に<code>posts/first-post.md</code>が生成される。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new posts/first-post.md
+</code></pre></div></li>
+<li>
+<p>記事を編集する
+<code>draft: true</code>のままだと公開できないため注意。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-first-post.md" data-lang="first-post.md">---
+title: &#34;First Post&#34;
+date: 2020-12-21T21:52:52+09:00
+draft: false
+tags:
+<span style="color:#66d9ef">-</span> hugo
+---
+ここから本文
+</code></pre></div></li>
+</ol>
+<h3 id="5-サーバを起動する">5. サーバを起動する</h3>
+<ol>
+<li>
+<p>サーバを起動する</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo server -D
+</code></pre></div></li>
+<li>
+<p>ブログを表示する<br>
+<a href="http://localhost:1313/"><code>http://localhost:1313/</code></a>にアクセスするとブログを表示できる。<br>
+<code>config.toml</code>を以下のように変更している場合、<a href="http://localhost:1313/path/"><code>http://localhost:1313/path/</code></a>にアクセスする必要がある。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config.toml" data-lang="config.toml"><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/path&#34;</span>
+</code></pre></div></li>
+</ol>
+<h3 id="6-サイトを生成する">6. サイトを生成する</h3>
+<ol>
+<li>
+<p>生成するディレクトリを変更する<br>
+GitHub Pages では<code>docs</code>以下を pages に公開する設定があるため、それに合わせて<code>config.toml</code>に以下を追加する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-config.toml" data-lang="config.toml"><span style="color:#a6e22e">publishDir</span> = <span style="color:#e6db74">&#34;docs&#34;</span>
+</code></pre></div></li>
+<li>
+<p>サイトを生成する</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo -D
+</code></pre></div></li>
+</ol>
+<h3 id="7-サイトを公開する">7. サイトを公開する</h3>
+<ol>
+<li>
+<p>リモートリポジトリに push する</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git push origin HEAD
+</code></pre></div></li>
+</ol>
+<p>これで完成！</p>
+<h2 id="hugo-を使ってみた感想">Hugo を使ってみた感想</h2>
+<p>ちょっと設定書いて、ちょっとコマンド叩くだけで完成！簡単！<br>
+Hugo をライブラリだと思い込んでいたけど、ツールだったんだね。<br>
+生成するにあたって、Golang でゴニョゴニョするのかと思っていたからちょっと身構えてた。</p>
+<h2 id="ブログに対する意気込み">ブログに対する意気込み</h2>
+<p>Twitter より濃いくらいのメモを IT に限らず書いていく。
+(Twitter も短い Blog みたいな触れ込みだったね)<br>
+とりあえず、140 字以上は書いたのでここまで。</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/blog/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://shokkunrf.github.io/blog/" >
+    &copy;  The Blog 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/blog/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
