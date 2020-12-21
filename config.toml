@@ -1,0 +1,6 @@
+title = "The Blog"
+baseURL = "https://shokkunrf.github.io/blog/"
+languageCode = "ja-jp"
+DefaultContentLanguage = "ja"
+theme = "ananke"
+publishDir = "docs"
