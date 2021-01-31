@@ -3,7 +3,7 @@ title: "First Post"
 date: 2020-12-21T21:53:52+09:00
 draft: false
 tags:
-  - hugo
+  - "Hugo"
 ---
 
 # ブログを始めてみた

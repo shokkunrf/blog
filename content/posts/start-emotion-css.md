@@ -2,6 +2,9 @@
 title: "TypeScript v4 + React v17 で Emotion v11 を動かしてみる"
 date: 2021-01-31T23:03:49+09:00
 draft: false
+tags:
+  - "Emotion"
+  - "React"
 ---
 
 Emotion v11 の導入につまずいたので残しておく。
