@@ -1,6 +1,16 @@
-title = "The Blog"
+title = "What's happened, happened."
 baseURL = "https://shokkunrf.github.io/blog/"
 languageCode = "ja-jp"
-DefaultContentLanguage = "ja"
+DefaultContentLanguage = "en"
 theme = "ananke"
 publishDir = "public"
+canonifyurls = true
+
+[menu]
+[[menu.main]]
+name = "posts"
+url = "/posts"
+
+[taxonomies]
+tag = "tags"
+category = "categories"

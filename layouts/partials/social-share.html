@@ -1,0 +1,36 @@
+<div class="social-share">
+  <button>🔗</button>
+  <span>タイトルとリンクをコピーしました</span>
+</div>
+
+{{ define "social-share" }}
+  {{ $title := .Title }}
+  {{ $url := printf "%s" .Permalink | absLangURL }}
+  {{ $message := printf "%s %s" $title $url}}
+  <script>
+    const elements = document.getElementsByClassName("social-share");
+    for (const element of elements) {
+      element.getElementsByTagName("button")[0].addEventListener("click", () => {
+        navigator.clipboard.writeText(
+          "{{ $message }}"
+        ).then(() => {
+          element.getElementsByTagName("span")[0].style.visibility = "visible";
+        });
+      });
+    }
+  </script>
+
+  <style>
+    .social-share > button {
+      background-color: #ddd;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+    }
+    .social-share > span {
+      visibility: hidden;
+    }
+  </style>
+{{ end }}
