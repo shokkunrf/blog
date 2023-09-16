@@ -1,16 +1,17 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height nested-img">
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+    <h1 class="flex-none">
+      {{ .Title }}
+    </h1>
 
-      <section class="w-100 mw8">
-        {{ range .Paginator.Pages }}
-          <div class="relative w-100 mb4">
-              {{ partial "summary.html" . }}
-          </div>
-        {{ end }}
-      </section>
+    <section class="w-100 mw8">
+      {{ range .Paginator.Pages }}
+        <div class="relative w-100 mb4">
+          {{ partial "summary.html" . }}
+        </div>
+      {{ end }}
+    </section>
 
-    </div>
     {{- template "_internal/pagination.html" . -}}
   </article>
 {{ end }}
