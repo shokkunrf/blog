@@ -6,6 +6,11 @@ theme = "ananke"
 publishDir = "public"
 canonifyurls = true
 
+[params]
+github = "https://github.com/shokkunrf"
+twitter = "https://twitter.com/shokkunrf"
+youtube = "https://www.youtube.com/@shokkunrf"
+
 [menu]
 [[menu.main]]
 name = "posts"
