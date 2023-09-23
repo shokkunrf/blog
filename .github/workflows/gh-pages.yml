@@ -1,18 +1,25 @@
 name: github pages
 
 on:
-  push:
-    branches:
-      - develop
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true # Fetch Hugo themes
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - uses: actions/checkout@v4
+
+      - name: Fetch submodules
+        run: |
+          eval `ssh-agent -s`
+
+          echo "${{ secrets.BLOG_CONTENTS }}" | ssh-add -
+          git submodule update --init
+          git submodule update --remote src/contents
+          ssh-add -D
+
+          eval `ssh-agent -k`
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
