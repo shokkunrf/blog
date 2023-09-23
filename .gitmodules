@@ -1,3 +1,6 @@
+[submodule "src/contents"]
+	path = src/contents
+	url = git@github.com:shokkunrf/blog-contents
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/budparr/gohugo-theme-ananke.git
