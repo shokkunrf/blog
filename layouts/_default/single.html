@@ -8,7 +8,7 @@
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="w-100">
       <div class="flex-ns flex-wrap items-center">
-        {{- partial "tags.html" . -}}
+        {{- partial "tags.html" .Params.tags -}}
         <span class="ml1">
           {{- partial "social-share.html" . -}}
         </span>
@@ -47,7 +47,7 @@
       {{- .Content -}}
     </div>
     <div class="flex-ns flex-wrap items-center w-100">
-      {{- partial "tags.html" . -}}
+      {{- partial "tags.html" .Params.tags -}}
       <span class="ml1">
         {{- partial "social-share.html" . -}}
       </span>
