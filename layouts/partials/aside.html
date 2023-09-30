@@ -16,7 +16,7 @@
     <ul class="pa0 flex-ns flex-wrap nested-links">
       {{- range $termName, $entries := .Site.Taxonomies.tags -}}
         <li class="list">
-          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="link f5 grow no-underline br-pill ba ph3 pv2 ma1 dib sans-serif">
+          <a href="{{ "/tags/" | relLangURL }}{{ $termName | urlize }}" class="link f5 grow no-underline br-pill ba ph3 pv2 ma1 dib sans-serif">
             #{{- $termName -}} &nbsp; ({{- $entries.Count -}})
           </a>
         </li>
