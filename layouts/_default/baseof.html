@@ -49,9 +49,15 @@
   <body class="ma0 avenir bg-near-black light-gray {{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    <main class="pb7 mw8 center min-vh-100" role="main">
-      {{ block "main" . }}{{ end }}
-    </main>
+    <div class="flex-l flex-wrap center mw9 min-vh-100">
+      <main class="pb7-l mw8 center min-vh-100" role="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+      <aside class="mw5-l mw7 center">
+        {{ partial "aside.html" . }}
+      </aside>
+    </div>
+
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
     {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
   </body>

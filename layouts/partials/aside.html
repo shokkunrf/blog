@@ -1,0 +1,58 @@
+<div class="mt4">
+  <div class="w4 center">
+    <img src="{{ .Site.Params.authorImage }}" class="br-pill">
+  </div>
+  <div class="flex flex-wrap justify-center">
+    @{{ .Site.Params.author }}
+  </div>
+  <div class="ml3 flex flex-wrap justify-center">
+    {{ partial "social-follow" . }}
+  </div>
+
+  <div>
+    <h2 class="f4">
+      Tags
+    </h2>
+    <ul class="pa0 flex-ns flex-wrap nested-links">
+      {{- range $termName, $entries := .Site.Taxonomies.tags -}}
+        <li class="list">
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="link f5 grow no-underline br-pill ba ph3 pv2 ma1 dib sans-serif">
+            #{{- $termName -}} &nbsp; ({{- $entries.Count -}})
+          </a>
+        </li>
+      {{- end -}}
+    </ul>
+  </div>
+
+  <div class="f5">
+    <h2 class="f4">
+      Archives
+    </h2>
+    {{ $articleDate := .Page.Date.Format "2006" }}
+    <ul class="nested-links pl0">
+      {{ $posts := where .Site.RegularPages "Section" "posts" }}
+      {{ range $posts.GroupByDate "2006" }}
+        <li class="list">
+          {{ $post := index .Pages 0 }}
+          {{ $date := $post.Date.Format "2006" }}
+          <a href="/archives/{{ $date }}" class="no-underline">
+            {{ $date }} ({{ len .Pages }})
+          </a>
+          {{ if eq $articleDate $date }}
+            <ul>
+              {{ range .Pages.GroupByDate "2006-01" }}
+                <li class="list">
+                  {{ $post := index .Pages 0 }}
+                  {{ $date := $post.Date.Format "2006-01" }}
+                  <a href="/archives/{{ $date }}" class="no-underline">
+                    {{ $date }} ({{ len .Pages }})
+                  </a>
+                </li>
+              {{ end }} {{/* range */}}
+            </ul>
+          {{ end }} {{/* if */}}
+        </li>
+      {{ end }} {{/* range */}}
+    </ul>
+  </div>
+</div>
