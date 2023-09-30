@@ -39,7 +39,7 @@
         {{/* Now, range through the next four after the initial $n_posts items. Nest the requirements, "after" then "first" on the outside */}}
         {{ range (first 4 (after $n_posts $section))  }}
           <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="{{ .Permalink }}" class="link black dim">
+            <a href="{{ .Permalink }}" class="link white dim">
               {{ .Title }}
             </a>
           </h2>
