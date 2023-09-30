@@ -18,4 +18,4 @@ url = "/posts"
 
 [taxonomies]
 tag = "tags"
-category = "categories"
+archive = "archives"
