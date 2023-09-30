@@ -1,5 +1,7 @@
 <header>
-  <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
-    {{ partial "site-navigation.html" . }}
+  <div class="bg-black pv3 ph3 ph4-ns">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white no-underline white-90 dib">
+      {{ .Site.Title }}
+    </a>
   </div>
 </header>
