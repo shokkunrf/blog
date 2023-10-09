@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What's happened, happened.</title><link>https://shokkunrf.github.io/blog/</link><description>Recent content on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 09 Oct 2023 14:45:03 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ワードウルフを作って実際に遊んだ</title><link>https://shokkunrf.github.io/blog/posts/20231009-word-wolf/</link><pubDate>Mon, 09 Oct 2023 14:45:03 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231009-word-wolf/</guid><description>ワードウルフを作った ワードジャンルを絞ったニッチなワードウルフを作った。
-作り始める前に、パーティーゲームをよくする集まりに &amp;ldquo;こんなワードウルフ楽しそうじゃない？&amp;rdquo; と提案してアイデアのウケがよかったから作る決心ができた。 実際に利用する場面が身近に想像できるというのはとても大切なことなんだと思う。
+パーティーゲームをよくする集まりに &amp;ldquo;こんなワードウルフ楽しそうじゃない？&amp;rdquo; と提案してウケがよかったから作る決心ができた。 実際に利用する場面が身近に想像できるというのはとても大切なことなんだと思う。
 開発についてはSvelteKitを使って3日くらいで完成させた。
-一般的なワードウルフのアプリをやったことがあったから、ほぼほぼそれの模倣ではあるし、ワードウルフというゲーム自体に必要なパラメータが少ないから難しくなかった。 すぐに完成させることを目標としていて、身内でしか使わないものだから、ということでエラーハンドリングなどはほとんどしていない。
-なぜSvelteKitを採用したかについては特筆するようなことはなく、ただReactだとCSSライブラリを感がなくてはならないし、Vueを使うならSvelteでいいやとフワッっとした理由。
-ワードウルフを遊んだ かなりウケた。つまり高評価を得られた。
-異常な動作はなく、見た目もアプリっぽくしたおかげかな？
+一般的なワードウルフのアプリをやったことがあったから、ほぼほぼそれの模倣ではあるし、ワードウルフというゲーム自体に必要なパラメータが少ないから難しくなかった。 すぐに完成させることを目標として、身内でしか使わないものだから、ということでエラーハンドリングなどはほとんどしていない。
+なぜSvelteKitを採用したかについては特筆するようなことはなく、ただReactだとCSSライブラリを考えなくてはならないし、Vueを使うならSvelteでいいやとフワッっとした理由。
+ワードウルフを遊んだ かなりウケた。
+異常な動作がなく、見た目もアプリっぽくしたおかげかな？
 簡単なつくりにしてよかった。
-&amp;ldquo;一般公開してみたらいいんじゃない？&amp;rdquo; と言ってもらえたが、ニッチすぎるワードジャンルをハードコードしてたり、エラーハンドリングをやっていなかったりなため、このまま公開するのは難しそう。 ただ、ワードウルフのフレームワークは作れたわけだから、やる気さえあれば公開できるかもしれない。 そのときには今回のメンバーにも企画開発に参画してもらうかな。
+&amp;ldquo;一般公開してみたらいいんじゃない？&amp;rdquo; と言ってもらえたが、ニッチすぎるワードジャンルをハードコードしてたり、エラーハンドリングをやっていなかったりなため、このまま公開するのは難しそう。 ただ、ワードウルフのフレームワークは作れたわけだから、やる気さえあれば公開できるかもしれない。 そのときには今回の集まりにも企画開発に参画してもらうかな。
 パーティーゲームを考える ワードウルフに限らずオフラインでできるパーティーゲームって作るの楽しそう。
 今回のようにスマホ1つを回すことで成立するゲームだと良い。開発の面ではセッションとか考えなくていいし、通信量とかも気にならない。加えて、心理戦的なゲームであればプレイヤーの視線をスマホから離せるほうがゲームとして楽しい。
-実際にやってみて楽しかったパーティーゲームをパクるだけでもたぶん楽しい。専用のカードを持ち歩かなくて済むから、いつでもどこでも遊べるようになる。
-ゴキブリポーカーでカードを伏せるようにスマホを伏せるとかも考えると、スマホ1つでもできることって意外と多いかも。ちょっと話してみようかな。</description></item><item><title>キャプボHDMVC4UCを攻略する</title><link>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</link><pubDate>Sat, 07 Oct 2023 10:31:33 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</guid><description>サンコー(thanko)のHDMIビデオキャプチャーカード HDMVC4UCの接続に困ったため記録を残しておく。
+実際にやってみて楽しかったパーティーゲームをパクるだけでも楽しいはず。専用のカードを持ち歩かなくて済むから、いつでもどこでも遊べるようになる。
+ゴキブリポーカーでカードを伏せるようにスマホを伏せるとかも考えると、スマホ1つでもできることって意外と多いかも。友人らとアイデア出ししてみようかな。</description></item><item><title>キャプボHDMVC4UCを攻略する</title><link>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</link><pubDate>Sat, 07 Oct 2023 10:31:33 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</guid><description>サンコー(thanko)のHDMIビデオキャプチャーカード HDMVC4UCの接続に困ったため記録を残しておく。
 https://amzn.asia/d/dUakPae 確認すること PCIeの設定がGen1になっているか 映像入力している機器の解像度がHDになっているか 経緯 友人からもらった 動作確認のために、ノートPCをミラーリングして接続したがなにも映らない。
 某サイトにあったPCI Expressの速度設定を「Gen1」にするで認識
 しかしHDMVC4UCは当時の値段の割にいいカードだと思うけど尼の新品価格やべーな
