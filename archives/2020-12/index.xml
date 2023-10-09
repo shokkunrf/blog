@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2020-12 on What's happened, happened.</title><link>https://shokkunrf.github.io/blog/archives/2020-12/</link><description>Recent content in 2020-12 on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 21 Dec 2020 21:53:52 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/archives/2020-12/index.xml" rel="self" type="application/rss+xml"/><item><title>First Post</title><link>https://shokkunrf.github.io/blog/posts/first-post/</link><pubDate>Mon, 21 Dec 2020 21:53:52 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/first-post/</guid><description>ブログを始めてみた なんでブログを始めたの？ 一番の理由は、メモの管理に困ってたから。
+これまでは、メモをディレクトリで分けていて、量が増えるにつれて探すことが難しくなっていた。
+また、作業の目的が書いていなかったり、前提条件がわからなかったりで振り返れないメモがあった。
+これらを、タグ機能を使って記事を管理し、公開することを意識して書くことで解決できるのはないかと思い、ブログを始めてみることにした。
+なんでHugoを選んだの？ Hugoを使っている友人がいたから、お互いに困ったときに情報共有できると思って選んだ。
+他にもHugoのリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
+あとこのQiita記事につられて30分でできると思ったから。
+まぁ2つ目以降の理由なんてみんな後付けなんだけども。
+Hugoでブログを始める手順 技術ブログっぽいものも書いてみる。
+手順といってもHugoのクイックスタートに沿って進めるだけ。
+この記事ではHugo v0.79.1を使い、Debian10を前提とする。
+1. Hugoをインストールする Hugo ReleasesからOSにあったパッケージをダウンロードし、インストールする
+今回はhugo_0.79.1_Linux-64bit.debをインストールする。
+hugoがインストールされているか確認する
+hugo version 2. サイトを作成する GitHubでリポジトリを作成する
+今回はblogというリポジトリを作った。
+ローカルにリポジトリをクローンする
+git clone git@github.com:shokkunrf/blog.git cd blog リポジトリ内にサイトを作成する
+fooは適当に付けた。好きな文字列でOK。
+hugo new site foo mv ./foo/* ./ rm -R ./foo 3. テーマを追加する Hugo のスタイルテーマからテーマを選ぶ
+クイックスタートにあったAnankeを使ってみる。
+選んだテーマのGitHubリポジトリをthemes/に追加する</description></item></channel></rss>

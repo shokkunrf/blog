@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What's happened, happened.</title><link>https://shokkunrf.github.io/blog/</link><description>Recent content on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sat, 23 Sep 2023 12:31:22 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Second Post</title><link>https://shokkunrf.github.io/blog/posts/20230923-second-post/</link><pubDate>Sat, 23 Sep 2023 12:31:22 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20230923-second-post/</guid><description>ブログを再開してみた。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>What's happened, happened.</title><link>https://shokkunrf.github.io/blog/</link><description>Recent content on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Mon, 09 Oct 2023 14:45:03 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>ワードウルフを作って実際に遊んだ</title><link>https://shokkunrf.github.io/blog/posts/20231009-word-wolf/</link><pubDate>Mon, 09 Oct 2023 14:45:03 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231009-word-wolf/</guid><description>ワードウルフを作った ワードジャンルを絞ったニッチなワードウルフを作った。
+作り始める前に、パーティーゲームをよくする集まりに &amp;ldquo;こんなワードウルフ楽しそうじゃない？&amp;rdquo; と提案してアイデアのウケがよかったから作る決心ができた。 実際に利用する場面が身近に想像できるというのはとても大切なことなんだと思う。
+開発についてはSvelteKitを使って3日くらいで完成させた。
+一般的なワードウルフのアプリをやったことがあったから、ほぼほぼそれの模倣ではあるし、ワードウルフというゲーム自体に必要なパラメータが少ないから難しくなかった。 すぐに完成させることを目標としていて、身内でしか使わないものだから、ということでエラーハンドリングなどはほとんどしていない。
+なぜSvelteKitを採用したかについては特筆するようなことはなく、ただReactだとCSSライブラリを感がなくてはならないし、Vueを使うならSvelteでいいやとフワッっとした理由。
+ワードウルフを遊んだ かなりウケた。つまり高評価を得られた。
+異常な動作はなく、見た目もアプリっぽくしたおかげかな？
+簡単なつくりにしてよかった。
+&amp;ldquo;一般公開してみたらいいんじゃない？&amp;rdquo; と言ってもらえたが、ニッチすぎるワードジャンルをハードコードしてたり、エラーハンドリングをやっていなかったりなため、このまま公開するのは難しそう。 ただ、ワードウルフのフレームワークは作れたわけだから、やる気さえあれば公開できるかもしれない。 そのときには今回のメンバーにも企画開発に参画してもらうかな。
+パーティーゲームを考える ワードウルフに限らずオフラインでできるパーティーゲームって作るの楽しそう。
+今回のようにスマホ1つを回すことで成立するゲームだと良い。開発の面ではセッションとか考えなくていいし、通信量とかも気にならない。加えて、心理戦的なゲームであればプレイヤーの視線をスマホから離せるほうがゲームとして楽しい。
+実際にやってみて楽しかったパーティーゲームをパクるだけでもたぶん楽しい。専用のカードを持ち歩かなくて済むから、いつでもどこでも遊べるようになる。
+ゴキブリポーカーでカードを伏せるようにスマホを伏せるとかも考えると、スマホ1つでもできることって意外と多いかも。ちょっと話してみようかな。</description></item><item><title>キャプボHDMVC4UCを攻略する</title><link>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</link><pubDate>Sat, 07 Oct 2023 10:31:33 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</guid><description>サンコー(thanko)のHDMIビデオキャプチャーカード HDMVC4UCの接続に困ったため記録を残しておく。
+https://amzn.asia/d/dUakPae 確認すること PCIeの設定がGen1になっているか 映像入力している機器の解像度がHDになっているか 経緯 友人からもらった 動作確認のために、ノートPCをミラーリングして接続したがなにも映らない。
+某サイトにあったPCI Expressの速度設定を「Gen1」にするで認識 しかしHDMVC4UCは当時の値段の割にいいカードだと思うけど尼の新品価格やべーな この値段出すなら最近のやつ買うは・・・ https://twitter.com/arte_l/status/939581729345495040
+このTweetに従ってPCIeの設定をGen1にしたところ、一瞬だけノイズまみれで映った。
+そこで取説を読み返すとHDキャプチャーボードと書いてある。 もしかしてと思い、映像入力をHDにしたところ利用できた。
+キャプボ自体がケースと合わなくてマザボに対して若干斜めに接続されてるけど、まぁ動いてるしいいか。
+資料 https://amzn.asia/d/dUakPae https://twitter.com/arte_l/status/939581729345495040</description></item><item><title>Second Post</title><link>https://shokkunrf.github.io/blog/posts/20230923-second-post/</link><pubDate>Sat, 23 Sep 2023 12:31:22 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20230923-second-post/</guid><description>ブログを再開してみた。
 6月末くらいから日記をつけている &amp;ldquo;今日できたことを記録するといいよ。意外といろいろやってるから。&amp;rdquo;
 これは前々から友人に言われていたこと。
 日々仕事をしていると自分の意志のある時間なんてほとんどない。 食って寝るか食わずに寝るかの違いしかない。 何も為していない。そんな風に悲観の波に襲われていた。
@@ -8,7 +26,7 @@
 内容としては日記のまとめということもあって、技術よりも思考や感情についてが多くなると思う。
 ブログタイトルをつけた &amp;ldquo;What&amp;rsquo;s happened, happened.&amp;rdquo;
 映画TENETに登場するセリフ。
-&amp;ldquo;起きたことは仕方ない。この世界の理だが、何もしない理由にはならない。&amp;ldquo;と続く。 この映画を表していてとても好きなセリフ。 未来が決定している世界観だからこそのセリフではあるが、未来がわからない現実であっても読み取れるエッセンスがある。 これについて書いていたら脱線し始めたのでまた別記事にしよう。 とりあえず、ブログタイトルは映画TENETからの引用だよ。TENET見てね！
+&amp;ldquo;起きたことは仕方ない。この世界の理だが、何もしない理由にはならない。&amp;rdquo; と続く。 この映画を表していてとても好きなセリフ。 未来が決定している世界観だからこそのセリフではあるが、未来がわからない現実であっても読み取れるエッセンスがある。 これについて書いていたら脱線し始めたのでまた別記事にしよう。 とりあえず、ブログタイトルは映画TENETからの引用だよ。TENET見てね！
 TENET - Amazon Prime Video モチベのために 再開するにあたって、ブログにいろいろと手を加えてみた。 ブログタイトルをつけたのもモチベ向上の一環。 他にも、ブログのレウアウトを変更してみた。
 前回はAnankeテーマをそのまま利用していたが、自分が使いやすいように変更してみた。それでもほぼほぼAnankeだけど。
 あとブログテンプレートと記事のcommitが混ざるのが嫌だったため、記事を別Repoistoryに移し、git submoduleを使うことにした。
@@ -29,7 +47,7 @@ import React, { FC } from &amp;#39;react&amp;#39;; import { css } from &amp;#39;
 他にもHugoのリポジトリの更新も続いてるみたいだし、Jamstackを見ても人気みたいだし。
 あとこのQiita記事につられて30分でできると思ったから。
 まぁ2つ目以降の理由なんてみんな後付けなんだけども。
-Hugo でブログを始める手順 技術ブログっぽいものも書いてみる。
+Hugoでブログを始める手順 技術ブログっぽいものも書いてみる。
 手順といってもHugoのクイックスタートに沿って進めるだけ。
 この記事ではHugo v0.79.1を使い、Debian10を前提とする。
 1. Hugoをインストールする Hugo ReleasesからOSにあったパッケージをダウンロードし、インストールする

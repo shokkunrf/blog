@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>2023-09 on What's happened, happened.</title><link>https://shokkunrf.github.io/blog/archives/2023-09/</link><description>Recent content in 2023-09 on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sat, 23 Sep 2023 12:31:22 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/archives/2023-09/index.xml" rel="self" type="application/rss+xml"/><item><title>Second Post</title><link>https://shokkunrf.github.io/blog/posts/20230923-second-post/</link><pubDate>Sat, 23 Sep 2023 12:31:22 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20230923-second-post/</guid><description>ブログを再開してみた。
+6月末くらいから日記をつけている &amp;ldquo;今日できたことを記録するといいよ。意外といろいろやってるから。&amp;rdquo;
+これは前々から友人に言われていたこと。
+日々仕事をしていると自分の意志のある時間なんてほとんどない。 食って寝るか食わずに寝るかの違いしかない。 何も為していない。そんな風に悲観の波に襲われていた。
+そこで前述の言葉を思い出して日記を始めてみた。 最初は何を食べたかとか買い出しに行ったとかそんなことを書いていた。2行とかの日もあった。 それでも毎日続けていくと量も質も上がっていくもので、今では3行になった。
+書き慣れてみると確かに意外とやっている。何もしてないわけじゃないことに気づけると失敗も嬉しい。 おかげで悲観の海は凪いでいる。
+こうして毎日日記を書いていると、量が増えてきて振り返りにくくなる。 前にもこんなこと考えたなぁとか話のネタとして引っ張り出したいときに不便に思っていた。 ということで、ここにまとめていく。
+内容としては日記のまとめということもあって、技術よりも思考や感情についてが多くなると思う。
+ブログタイトルをつけた &amp;ldquo;What&amp;rsquo;s happened, happened.&amp;rdquo;
+映画TENETに登場するセリフ。
+&amp;ldquo;起きたことは仕方ない。この世界の理だが、何もしない理由にはならない。&amp;rdquo; と続く。 この映画を表していてとても好きなセリフ。 未来が決定している世界観だからこそのセリフではあるが、未来がわからない現実であっても読み取れるエッセンスがある。 これについて書いていたら脱線し始めたのでまた別記事にしよう。 とりあえず、ブログタイトルは映画TENETからの引用だよ。TENET見てね！
+TENET - Amazon Prime Video モチベのために 再開するにあたって、ブログにいろいろと手を加えてみた。 ブログタイトルをつけたのもモチベ向上の一環。 他にも、ブログのレウアウトを変更してみた。
+前回はAnankeテーマをそのまま利用していたが、自分が使いやすいように変更してみた。それでもほぼほぼAnankeだけど。
+あとブログテンプレートと記事のcommitが混ざるのが嫌だったため、記事を別Repoistoryに移し、git submoduleを使うことにした。
+前回ブログが続かなかったのはこれらのせいだった。まだ変えたいところはいくつかあるけれど、ひとまずリリース。
+これからは続けるためにモチベを重視する。 そんなん気にせずやればいいじゃんと自分によく言っていたけれど、自分の気持ちも大事だよ。
+First Postを振り返る ブログを始める動機だったり、意気込みだったり、今と変わってない。 今回も140字書けたら上等だと思って続けていこう。ハードルは低めに。 そう、ここはTwitterの避難先。
+First Post</description></item></channel></rss>
