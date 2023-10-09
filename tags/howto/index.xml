@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>howto on What's happened, happened.</title><link>https://shokkunrf.github.io/blog/tags/howto/</link><description>Recent content in howto on What's happened, happened.</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Sat, 07 Oct 2023 10:31:33 +0900</lastBuildDate><atom:link href="https://shokkunrf.github.io/blog/tags/howto/index.xml" rel="self" type="application/rss+xml"/><item><title>キャプボHDMVC4UCを攻略する</title><link>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</link><pubDate>Sat, 07 Oct 2023 10:31:33 +0900</pubDate><guid>https://shokkunrf.github.io/blog/posts/20231007-hdmvc4uc/</guid><description>サンコー(thanko)のHDMIビデオキャプチャーカード HDMVC4UCの接続に困ったため記録を残しておく。
 https://amzn.asia/d/dUakPae 確認すること PCIeの設定がGen1になっているか 映像入力している機器の解像度がHDになっているか 経緯 友人からもらった 動作確認のために、ノートPCをミラーリングして接続したがなにも映らない。
-某サイトにあったPCI Expressの速度設定を「Gen1」にするで認識 しかしHDMVC4UCは当時の値段の割にいいカードだと思うけど尼の新品価格やべーな この値段出すなら最近のやつ買うは・・・ https://twitter.com/arte_l/status/939581729345495040
-このTweetに従ってPCIeの設定をGen1にしたところ、一瞬だけノイズまみれで映った。
+某サイトにあったPCI Expressの速度設定を「Gen1」にするで認識
+しかしHDMVC4UCは当時の値段の割にいいカードだと思うけど尼の新品価格やべーな
+この値段出すなら最近のやつ買うは・・・
+&amp;mdash; あるて (@arte_l) December 9, 2017 このTweetに従ってPCIeの設定をGen1にしたところ、一瞬だけノイズまみれで映った。
 そこで取説を読み返すとHDキャプチャーボードと書いてある。 もしかしてと思い、映像入力をHDにしたところ利用できた。
 キャプボ自体がケースと合わなくてマザボに対して若干斜めに接続されてるけど、まぁ動いてるしいいか。
 資料 https://amzn.asia/d/dUakPae https://twitter.com/arte_l/status/939581729345495040</description></item></channel></rss>
