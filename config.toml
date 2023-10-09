@@ -6,6 +6,11 @@ theme = "ananke"
 publishDir = "public"
 canonifyurls = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 author = "shokkunrf"
 authorImage = "https://avatars.githubusercontent.com/u/19404989"
